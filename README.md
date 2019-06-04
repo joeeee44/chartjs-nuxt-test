@@ -1,6 +1,8 @@
 # chartjs-nuxt-test
 
-> My fabulous Nuxt.js project
+## Demo
+
+[Demo](https://chartjs-nuxt-test.netlify.com)
 
 ## Build Setup
 
