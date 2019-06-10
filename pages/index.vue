@@ -11,7 +11,7 @@
 </template>
 
 <script>
-import LineChart from '@/plugins/LineChart.js'
+import LineChart from '@/plugins/LineChart.vue'
 
 export default {
   components: {
@@ -20,10 +20,7 @@ export default {
   data() {
     return {
       datacollection: {},
-      options: {
-        responsive: true,
-        maintainAspectRatio: false
-      },
+      options: {},
       height: 300
     }
   },
@@ -44,7 +41,7 @@ export default {
     },
     fillData() {
       this.datacollection = {
-        labels: [...Array(31)].map((item, i) => {
+        labels: [...Array(5)].map((item, i) => {
           return i + 1
         }),
         datasets: [
@@ -53,7 +50,7 @@ export default {
             label: 'Data One',
             backgroundColor: 'rgba(0, 0, 0, 0)',
             borderColor: 'rgba(117, 202, 251, 1)',
-            data: [...Array(31)].map((item, i) => {
+            data: [...Array(5)].map((item, i) => {
               return this.getRandomInt()
             })
           },
@@ -62,11 +59,16 @@ export default {
             label: 'Data One',
             backgroundColor: 'rgba(0, 0, 0, 0)',
             borderColor: 'rgba(252, 121, 118, 1)',
-            data: [...Array(31)].map((item, i) => {
+            data: [...Array(5)].map((item, i) => {
               return this.getRandomInt()
             })
           }
         ]
+      }
+      this.options = {
+        responsive: true,
+        maintainAspectRatio: false,
+        showAllTooltips: true
       }
     },
     getRandomInt() {

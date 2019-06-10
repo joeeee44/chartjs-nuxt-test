@@ -31,7 +31,7 @@ export default {
    */
   plugins: [
     {
-      src: '@/plugins/LineChart.js',
+      src: '@/plugins/LineChart.vue',
       ssr: false
     }
   ],
