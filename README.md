@@ -4,6 +4,8 @@
 
 [Demo](https://chartjs-nuxt-test.netlify.com)
 
+<img width="1208" alt="chartjs-nuxt-test" src="https://user-images.githubusercontent.com/20234479/59190169-feffda80-8bb6-11e9-9b98-05686965b5f5.png">
+
 ## Build Setup
 
 ``` bash
